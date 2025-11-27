@@ -6,7 +6,7 @@ import { MapPin, Clock, Mail, Phone } from 'lucide-react';
 const Contact: React.FC = () => {
   return (
     <div className="pt-20">
-      <div className="bg-brand-900 py-20 text-center text-white">
+      <div className="bg-black py-20 text-center text-white">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Contact Us</h1>
         <p className="text-brand-200 max-w-xl mx-auto text-lg">Get in touch for bulk orders, dealership enquiries, or technical support.</p>
       </div>
