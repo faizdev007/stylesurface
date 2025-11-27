@@ -45,17 +45,12 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled || location.pathname !== '/' ? 'bg-white/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled || location.pathname !== '/' ? 'bg-black/95 backdrop-blur-md shadow-md py-3' : 'bg-black py-5'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5">
-            <div className="bg-gradient-to-br from-brand-800 to-brand-600 p-2 rounded-lg shadow-lg">
-              <Sheet className="w-6 h-6 text-white" />
-            </div>
-            <span className={`text-xl md:text-2xl font-extrabold tracking-tight ${isScrolled || location.pathname !== '/' ? 'text-industrial-dark' : 'text-industrial-dark'}`}>
-              {settings?.siteName.split('Stylen')[0] || 'Stylen'}<span className="text-brand-600">{settings?.siteName.includes('Surface') ? 'Surface' : ''}</span>
-            </span>
+            <img src="/logo.webp" alt="Style Surface Logo" width={150} height={40} className="object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -65,19 +60,19 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
                 key={link.id} 
                 to={link.url} 
                 target={link.target}
-                className={`font-medium text-sm transition-colors relative group ${isActive(link.url) ? 'text-brand-700 font-bold' : 'text-industrial-gray hover:text-brand-700'}`}
+                className={`font-medium text-sm transition-colors relative group ${isActive(link.url) ? 'text-yellow-500 font-bold' : 'text-white hover:text-yellow-500'}`}
               >
                 {link.label}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-brand-600 transition-all ${isActive(link.url) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-yellow-500 transition-all ${isActive(link.url) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
               </Link>
             ))}
           </div>
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-5">
-            <a href={`tel:${settings?.phone}`} className="flex items-center gap-2 text-industrial-dark hover:text-brand-700 font-bold transition-colors">
-              <div className="bg-brand-50 p-2 rounded-full">
-                <Phone className="w-4 h-4 text-brand-600" />
+            <a href={`tel:${settings?.phone}`} className="flex items-center gap-2 text-white hover:text-yellow-600 font-bold transition-colors">
+              <div className="text-yellow-50 p-2 rounded-full">
+                <Phone className="w-4 h-4 text-yellow-600" />
               </div>
               <span>{settings?.phone}</span>
             </a>
@@ -102,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
               <Link 
                 key={link.id} 
                 to={link.url}
-                className={`font-medium p-3 rounded-lg transition-colors ${isActive(link.url) ? 'bg-brand-50 text-brand-700' : 'text-industrial-dark hover:bg-gray-50'}`}
+                className={`font-medium p-3 rounded-lg transition-colors ${isActive(link.url) ? 'text-yellow-50 text-brand-700' : 'text-industrial-dark hover:bg-gray-50'}`}
               >
                 {link.label}
               </Link>

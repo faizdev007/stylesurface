@@ -108,9 +108,9 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal, content: propContent }) => {
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-600 to-accent-500 rounded-2xl blur opacity-20"></div>
             
             <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-              <div className="bg-brand-900 p-4 text-center">
+              <div className="bg-black p-4 text-center">
                 <h3 className="text-white font-bold text-lg">Request Wholesale Quote</h3>
-                <p className="text-brand-200 text-xs">Get response within 2 hours</p>
+                <p className="text-white text-xs">Get response within 2 hours</p>
               </div>
               
               <div className="p-6 md:p-8">

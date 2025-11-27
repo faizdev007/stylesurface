@@ -23,7 +23,7 @@ const AdminLogin: React.FC = () => {
       localStorage.setItem('isAdmin', 'true');
       navigate('/admin/dashboard');
     } else {
-      setError('Invalid credentials. Try admin / admin123');
+      setError('Invalid credentials. Please try again.');
     }
   };
 

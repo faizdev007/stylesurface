@@ -26,19 +26,14 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
   if (!settings) return null; // Or a loader
 
   return (
-    <footer className="bg-industrial-dark text-white pt-20 pb-10 border-t border-gray-800">
+    <footer className="bg-black text-white pt-20 pb-10 border-t border-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-2.5">
-              <div className="bg-brand-700 p-2 rounded-lg">
-                <Sheet className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold tracking-tight text-white">
-                {settings.siteName}
-              </span>
+              <img src="/logo.webp" alt="Style Surface Logo" width={150} height={40} className="object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed">
               India's leading manufacturer and supplier of high-quality Acrylic, Ubuntu, and Cork sheets for industrial and commercial use.
@@ -57,8 +52,8 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
             <h4 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Quick Links</h4>
             <ul className="space-y-4 text-gray-400">
               {menuItems.map((link) => (
-                <li key={link.id}><Link to={link.url} className="hover:text-brand-400 transition-colors flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>
+                <li key={link.id}><Link to={link.url} className="hover:text-yellow-500 transition-colors flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></span>
                   {link.label}
                 </Link></li>
               ))}
@@ -70,21 +65,21 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
             <h4 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Contact Us</h4>
             <ul className="space-y-6 text-gray-400">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-yellow-600 mt-1 flex-shrink-0" />
                 <div>
                   <span className="block text-xs text-gray-500 uppercase mb-1 font-bold">Head Office</span>
                   {settings.address}
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-yellow-600 mt-1 flex-shrink-0" />
                 <div>
                   <span className="block text-xs text-gray-500 uppercase mb-1 font-bold">Phone</span>
                   {settings.phone}
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-brand-500 mt-1 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-yellow-600 mt-1 flex-shrink-0" />
                 <div>
                   <span className="block text-xs text-gray-500 uppercase mb-1 font-bold">Email</span>
                   {settings.email}

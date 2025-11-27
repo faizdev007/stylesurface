@@ -23,7 +23,7 @@ const TrustSection: React.FC<TrustSectionProps> = ({ content }) => {
   const title = content?.title || "Why Industry Leaders Choose Us";
 
   return (
-    <section className="py-20 bg-brand-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
        {/* Decorative background */}
        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
        
@@ -39,7 +39,7 @@ const TrustSection: React.FC<TrustSectionProps> = ({ content }) => {
              const IconComponent = typeof feature.icon === 'string' ? (iconMap[feature.icon] || Award) : feature.icon;
              
              return (
-                <div key={idx} className="group flex flex-col items-center text-center p-6 rounded-2xl bg-brand-800/30 border border-brand-700/50 hover:bg-brand-800/80 hover:border-brand-600 transition-all duration-300 hover:-translate-y-1">
+                <div key={idx} className="group flex flex-col items-center text-center p-6 rounded-2xl bg-yellow-600/80 border border-brand-700/50 hover:bg-yellow-800/80 hover:border-brand-600 transition-all duration-300 hover:-translate-y-1">
                 <div className="bg-brand-950 p-4 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner border border-brand-800">
                     <IconComponent className="w-8 h-8 text-accent-400" />
                 </div>

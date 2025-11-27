@@ -102,7 +102,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({ onOpenModal, content: p
         <div className="mt-16 text-center bg-brand-50 rounded-2xl p-8 border border-brand-100">
           <h3 className="text-xl font-bold text-brand-900 mb-2">Don't see what you're looking for?</h3>
           <p className="text-brand-700 mb-6">We offer custom manufacturing services for specific industrial requirements.</p>
-          <Button variant="primary" onClick={onOpenModal}>
+          <Button variant="accent"  onClick={onOpenModal}>
             Request Custom Catalog
           </Button>
         </div>
