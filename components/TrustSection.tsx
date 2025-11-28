@@ -23,7 +23,7 @@ const TrustSection: React.FC<TrustSectionProps> = ({ content }) => {
   const title = content?.title || "Why Industry Leaders Choose Us";
 
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gray-700 text-white relative overflow-hidden">
        {/* Decorative background */}
        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
        

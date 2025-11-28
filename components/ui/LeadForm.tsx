@@ -41,6 +41,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ className = '', onSuccess }) => {
           console.error("Email Send Error:", err);
         }
         
+        return;
         // 1. Save to Supabase (Primary Database)
         const { data, error } = await supabase.from('leads').insert({
             full_name: formState.fullName,

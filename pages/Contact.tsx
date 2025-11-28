@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
             <p className="text-gray-600 mt-2">Visit our regional distribution centers</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm">
+             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm shadow-black">
                <h3 className="font-bold text-lg text-industrial-dark mb-2 flex items-center gap-2">
                  <MapPin className="w-5 h-5 text-brand-500" /> New Delhi (HQ)
                </h3>
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                  Plot No. 123, Industrial Area, Phase 2,<br/> Okhla, New Delhi, 110020
                </p>
              </div>
-             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm">
+             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm shadow-black">
                <h3 className="font-bold text-lg text-industrial-dark mb-2 flex items-center gap-2">
                  <MapPin className="w-5 h-5 text-brand-500" /> Mumbai
                </h3>
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                  Gala No. 45, Building B, Bhiwandi Logistics Park,<br/> Thane, Maharashtra, 421302
                </p>
              </div>
-             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm">
+             <div className="bg-white p-6 rounded-xl border-l-4 border-brand-500 shadow-sm shadow-black">
                <h3 className="font-bold text-lg text-industrial-dark mb-2 flex items-center gap-2">
                  <MapPin className="w-5 h-5 text-brand-500" /> Bangalore
                </h3>
