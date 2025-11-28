@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useParams, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams, Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Modal from './components/ui/Modal';
@@ -93,8 +93,8 @@ function App() {
       <div className="min-h-screen bg-white font-sans text-slate-900 flex flex-col">
         <Routes>
           {/* Admin Routes (No Navbar/Footer) */}
-          <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/stylesheet/admin" element={<AdminLogin />} />
+          <Route path="/stylesheet/admin/dashboard" element={<AdminDashboard />} />
           
           {/* Thank You Page (No Navbar/Footer) */}
           <Route path="/thank-you" element={<ThankYou />} />

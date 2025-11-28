@@ -108,9 +108,9 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
           <div className="flex items-center gap-6">
             <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="#" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link to="/admin" className="hover:text-brand-500 transition-colors flex items-center gap-1">
+            {/* <Link to="/stylesheet/admin" className="hover:text-brand-500 transition-colors flex items-center gap-1">
               <Lock className="w-3 h-3" /> Admin
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
