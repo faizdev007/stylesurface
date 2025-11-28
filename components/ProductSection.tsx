@@ -38,7 +38,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({ onOpenModal, content: p
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {products.map((product) => (
-            <div key={product.id} className="group bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden transform hover:-translate-y-1">
+            <div key={product.id} className="group bg-white rounded-2xl border shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden transform hover:-translate-y-1">
               {/* Image Area */}
               <div className="relative h-48 overflow-hidden bg-gray-100">
                 <img 
