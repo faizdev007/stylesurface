@@ -62,11 +62,6 @@ const ContactSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Map Placeholder */}
-            <div className="mt-8 h-48 bg-gray-100 rounded-xl border border-gray-200 flex items-center justify-center text-gray-400">
-               Google Map Integration
-            </div>
           </div>
 
           {/* Form */}

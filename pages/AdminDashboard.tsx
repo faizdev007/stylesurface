@@ -441,7 +441,7 @@ const AdminDashboard: React.FC = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('isAdmin');
-    navigate('/admin');
+    navigate('/stylesheet/admin');
   };
 
   return (

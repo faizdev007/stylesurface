@@ -133,13 +133,22 @@ const DynamicPage: React.FC<DynamicPageProps> = ({ page, onOpenModal }) => {
                 {heroContent.bgImage && (
                     <div className={`absolute inset-0 bg-cover bg-center opacity-20`} style={{ backgroundImage: `url(${heroContent.bgImage})` }}></div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-900 via-transparent to-transparent"></div>
-                <div className="container mx-auto px-4 relative z-10">
-                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6">{heroContent.title || page.title}</h1>
-                    <p className="text-xl text-brand-100 max-w-3xl leading-relaxed mb-8">
-                        {heroContent.subtitle || "Premium Quality Industrial Sheets"}
-                    </p>
-                    <Button variant="accent" size="lg" onClick={onOpenModal}>Get Quote</Button>
+                <div className='grid grid-cols-2 gap-8 max-w-7xl mx-auto px-4 relative z-10'>
+                    <div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-900 via-transparent to-transparent"></div>
+                        <div className="container mx-auto px-4 relative z-10">
+                            <h1 className="text-5xl md:text-7xl font-extrabold mb-6">{heroContent.title || page.title}</h1>
+                            <p className="text-xl text-brand-100 max-w-3xl leading-relaxed mb-8">
+                                {heroContent.subtitle || "Premium Quality Industrial Sheets"}
+                            </p>
+                            <Button variant="accent" size="lg" onClick={onOpenModal}>Get Quote</Button>
+                        </div>
+                    </div>
+                    {/* Form */}
+                    <div className="bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-200 z-10">
+                        <h3 className="text-2xl font-bold text-industrial-dark mb-6">Send Enquiry</h3>
+                        <LeadForm />
+                    </div>
                 </div>
             </div>
 

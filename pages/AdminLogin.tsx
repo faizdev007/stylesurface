@@ -12,7 +12,7 @@ const AdminLogin: React.FC = () => {
   useEffect(() => {
     // If already logged in, redirect to dashboard
     if (localStorage.getItem('isAdmin') === 'true') {
-      navigate('/admin/dashboard');
+      navigate('/stylesheet/admin/dashboard');
     }
   }, [navigate]);
 
@@ -21,7 +21,7 @@ const AdminLogin: React.FC = () => {
     // Dummy credentials
     if (username === 'admin' && password === 'admin123') {
       localStorage.setItem('isAdmin', 'true');
-      navigate('/admin/dashboard');
+      navigate('/stylesheet/admin/dashboard');
     } else {
       setError('Invalid credentials. Please try again.');
     }
